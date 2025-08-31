@@ -1,3 +1,4 @@
 FROM mongo-express:1.0.2-20-alpine3.19
 EXPOSE 8081
-CMD ["tini", "--", "node", "app"]
+ENTRYPOINT ["tini", "--"]
+CMD ["node", "app"]
